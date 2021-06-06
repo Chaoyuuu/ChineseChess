@@ -29,7 +29,6 @@ public class ChessBoard {
             ChessCommand chessCommand = chessCommands.pop();
             chessCommand.undo();
         } catch (EmptyStackException e) {
-            System.out.println("empty stack");
         }
     }
 
