@@ -38,7 +38,6 @@ public class Presenter implements ViewObserver {
             audio$.update(PUT);
         } catch (InvalidMoveException | IllegalArgumentException e) {
             audio$.update(ERROR);
-            System.out.println("error in presenter" + e.getMessage());
         }
     }
 }
